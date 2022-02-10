@@ -42,11 +42,23 @@ namespace ConsoleApp6
             //long a = nums[0];
             //long b = nums[1];
             //Console.WriteLine(a*a + b*b);
-            int n = int.Parse(Console.ReadLine());
+           /* int n = int.Parse(Console.ReadLine());
             n = Math.Abs(n);
 
             Console.WriteLine(Math.Pow(((n / 10) +(n%10)),2));
-            
+
+            int n; // static 7
+            int m = 0;
+            int z = int.Parse(Console.ReadLine()); //input 9 7 8 5 20 100 dinamik
+
+            double d = 5.6;
+            float f = 5.7F;
+            decimal a = 5.8M;
+            char c;
+            char c2 = char.Parse(Console.ReadLine());
+            char c3 = 'C';
+            int e = c3 + 5;*/
+
         }
     }
 }

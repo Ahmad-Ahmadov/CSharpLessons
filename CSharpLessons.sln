@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExample", "ArrayExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMethods", "StringMethods\StringMethods.csproj", "{93454390-95E5-4D39-89CD-EBA640514D0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExample", "StringExample\StringExample.csproj", "{2D60EB73-CBC9-4FE4-8A19-2BA7533A8FFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{93454390-95E5-4D39-89CD-EBA640514D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93454390-95E5-4D39-89CD-EBA640514D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93454390-95E5-4D39-89CD-EBA640514D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D60EB73-CBC9-4FE4-8A19-2BA7533A8FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D60EB73-CBC9-4FE4-8A19-2BA7533A8FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D60EB73-CBC9-4FE4-8A19-2BA7533A8FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D60EB73-CBC9-4FE4-8A19-2BA7533A8FFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

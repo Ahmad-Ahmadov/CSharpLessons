@@ -44,17 +44,22 @@ namespace StringMethods
             int m = 123465;
             text = m.ToString();
             Console.WriteLine($"Result: {text.GetType()}");
-
+            // simvolun hərf və ya rəqəm olub olmadığını yoxlayır
+            //Char.IsLetterOrDigit()
+            // simvolun herf olub olmadığını yoxlayır
+            //Char.IsLetter()
+            // simvolun rəqəm olub olmadığını yoxlayır
+            //Char.IsDigit()
             // abc abcd a basdasd asda qweqweqas
-            /*string text = Console.ReadLine();
-            string[] words = text.Split();
-            string s = words[0], l=words[0];
-            foreach (string word in words)
-            {
-                if (word.Length < s.Length) s = word;
-                else if(word.Length > l.Length) l = word;
-            }
-            Console.WriteLine($"Short: {s}\nLong: {l}");*/
+            //string text = Console.ReadLine();
+            //string[] words = text.Split();
+            //string s = words[0], l=words[0];
+            //foreach (string word in words)
+            //{
+            //    if (word.Length < s.Length) s = word;
+            //    else if(word.Length > l.Length) l = word;
+            //}
+            //Console.WriteLine($"Short: {s}\nLong: {l}");
 
         }
     }

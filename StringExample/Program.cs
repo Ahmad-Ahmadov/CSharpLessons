@@ -65,6 +65,27 @@ namespace StringExample
             //if (check)
             //    Console.WriteLine("TRUE");
             //else Console.WriteLine("FALSE");
+
+            //7849
+            int n = int .Parse(Console.ReadLine()),num;
+            /*int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+            int max = nums.Max(), min = nums.Min();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == max) nums[i] = min;
+                else if(nums[i] == min) nums[i] = max;
+            }
+            foreach (int m in nums)
+                Console.Write(m + " ");*/
+            for (int i = 0; i < n; i++)
+            {
+                num = int.Parse(Console.ReadLine());
+                if (num % 2 == 0) Console.WriteLine($"{num} is even");
+                else Console.WriteLine($"{num} is odd");
+            }
+
+           
+            
             
             
         }

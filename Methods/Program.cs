@@ -11,7 +11,11 @@ namespace Methods
             Console.WriteLine("Hello");
         }
 
-        public static void PrintHelloByName(string name)
+        public static double GetCredit(double mebleg, double faiz = 16)
+        {
+            return mebleg + (mebleg * faiz) / 100.0;
+        }
+        public static void PrintHelloByName(string name = "User")
         {
             Console.WriteLine($"Hello {name}");
         }
@@ -46,10 +50,34 @@ namespace Methods
             for (int i = 2; i < (int)num; i++)
                 if ((int)num % i == 0) return false;
             return true;           
-        }        
+        }  
+        
+        public static int CountOfPrimaryNumbers(int a , int b)
+        {
+            int count = 0;
+            bool isPrimary = true;
+            for (int i = a; i <= b; i++)
+            {
+                for(int j = 2; j < i; j++)
+                    if(i % j == 0) isPrimary = false;
+                if(isPrimary) count++;
+                isPrimary = true;
+            }
+            return count;
+        }
+
+        public static int Sum(params int[] value)
+        {
+            int sum = 0;
+            for (int i = 0; i < value.Length; i++)
+                sum+=value[i];
+            return sum;
+        }
         
         static void Main(string[] args)
         {
+            //decimal num = 5.6m;
+            //float num2 = 5.6F;
             // var object dynamic
             //string m = "Medine";
             //PrintHello();
@@ -81,9 +109,15 @@ namespace Methods
             //int num = 37;
             //Console.WriteLine(IsPrimary(num));
             //Console.WriteLine(num.IsPrimary()); // extension method
-
-            string name = "     Ahmad Ahmadov    ";
-            Console.WriteLine(name.TrimCustom());
+            //string name = "     Ahmad Ahmadov    ";
+            //Console.WriteLine(name.TrimCustom());
+            //Console.WriteLine(GetCredit(1000));
+            //Console.WriteLine(CountOfPrimaryNumbers(2,10));
+            //string text = "AHMAD";
+            //Console.WriteLine(text.SubStringCustom(0,2));
+            int[] nums = { 10, 2, 5, 7, 9, 0, 1, 6, 15, 11, 8, 95 };
+            nums.SelectionSort();
+            Array.ForEach(nums, Console.WriteLine);
         }
         
     }

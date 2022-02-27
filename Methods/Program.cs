@@ -117,6 +117,7 @@ namespace Methods
             //Console.WriteLine(text.SubStringCustom(0,2));
             int[] nums = { 10, 2, 5, 7, 9, 0, 1, 6, 15, 11, 8, 95 };
             nums.SelectionSort();
+            string name;
             Array.ForEach(nums, Console.WriteLine);
         }
         

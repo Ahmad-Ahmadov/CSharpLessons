@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOutKeyword", "RefOutKeyw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{7E4B3654-52FD-47B6-A3E0-7AF0162AFEE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiersInheritance", "AccessModifiersInheritance\AccessModifiersInheritance.csproj", "{714E4F99-F3AF-46AC-811E-AF31099E0651}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7E4B3654-52FD-47B6-A3E0-7AF0162AFEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E4B3654-52FD-47B6-A3E0-7AF0162AFEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E4B3654-52FD-47B6-A3E0-7AF0162AFEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

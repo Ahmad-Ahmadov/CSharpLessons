@@ -1,4 +1,5 @@
 ﻿using System;
+using AccessModifiersInheritance;
 
 namespace Classes
 {
@@ -130,6 +131,7 @@ namespace Classes
             //arr[i].LastName = Console.ReadLine();
             //Console.Write("Gender: ");
             //arr[i].Gender = Console.ReadLine();
+            //MyClass m = new MyClass();
         }
     }
 }

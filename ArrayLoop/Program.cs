@@ -58,6 +58,26 @@ namespace ArrayLoop
             /*int[] nums = { 1, 2, 3, 4, 5, 7, 8, 7, 89 };
             foreach(int m in nums)
                 Console.WriteLine(m);*/
+            int[,] m = new int[5, 5]; 
+            for (int i = 0; i < 5; i++)
+            {
+                var nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+                for (int j = 0; j < 5; j++)
+                {
+                    m[i,j] = nums[j];
+                }
+            }
+
+            Console.WriteLine();
+            for (int i = 0; i <= m.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= m.GetUpperBound(1); j++)
+                {
+                    Console.Write($"{m[i, j]} ");// string interpolation
+                }
+                Console.WriteLine();
+            }
+
             int y = 0;
             int x = ++y;
             Console.WriteLine(y);

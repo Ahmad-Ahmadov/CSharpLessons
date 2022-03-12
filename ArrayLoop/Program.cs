@@ -58,7 +58,7 @@ namespace ArrayLoop
             /*int[] nums = { 1, 2, 3, 4, 5, 7, 8, 7, 89 };
             foreach(int m in nums)
                 Console.WriteLine(m);*/
-            int[,] m = new int[5, 5]; 
+            /*int[,] m = new int[5, 5]; 
             for (int i = 0; i < 5; i++)
             {
                 var nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
@@ -76,15 +76,48 @@ namespace ArrayLoop
                     Console.Write($"{m[i, j]} ");// string interpolation
                 }
                 Console.WriteLine();
-            }
+            }*/
 
             //int y = 0;
             //int x = ++y;
             //Console.WriteLine(y);
             ////int z = ++y;
             //Console.WriteLine(x);
-           
-            
+
+            int n = int.Parse(Console.ReadLine());
+            int[,] m = new int[n, n];
+
+            /*for (int i = 0; i < n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    for (int j = 0; j < n; j++)
+                        m[i, j] = j + 1;
+                }
+                else
+                {
+                    for (int j = 0; j < n; j++)
+                        m[i, j] = n-j;
+                }
+            }*/
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == n - 1- i) m[i, j] = n - i;
+                    else m[i, j] = 0;
+                }
+            }
+
+            for (int i = 0; i <= m.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= m.GetUpperBound(1); j++)
+                {
+                    Console.Write($"{m[i, j]} ");// string interpolation
+                }
+                Console.WriteLine();
+            }
 
 
         }

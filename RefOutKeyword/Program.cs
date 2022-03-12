@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RefOutKeyword
 {
@@ -104,6 +105,15 @@ namespace RefOutKeyword
     }
     class Program
     {
+        public static int Sum(params int[] nums)//parameters
+        {
+            return nums.Sum();
+        }
+        public static void Change(int[] nums)
+        {
+            nums[0] = 100;
+            nums[1] = 500;
+        }
         public static void Change(ref int a)
         {
             
@@ -113,11 +123,7 @@ namespace RefOutKeyword
         {
             a = 500; 
         }
-        public static void Change(int[] nums)
-        {
-            nums[0] = 100;
-            nums[1] = 500;
-        }
+        
 
         static void Main(string[] args)
         {
@@ -142,8 +148,10 @@ namespace RefOutKeyword
             //Console.WriteLine(word);
             //Console.WriteLine(text);
             int[] nums = { 1, 20, 3, 0, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
-            nums.SelectionSort();
-            Array.ForEach(nums, Console.WriteLine);
+            Console.WriteLine(Sum(2,4));
+           
+           /* nums.SelectionSort();
+            Array.ForEach(nums, Console.WriteLine);*/
         }
     }
 }

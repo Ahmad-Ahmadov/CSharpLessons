@@ -78,11 +78,11 @@ namespace ArrayLoop
                 Console.WriteLine();
             }
 
-            int y = 0;
-            int x = ++y;
-            Console.WriteLine(y);
-            //int z = ++y;
-            Console.WriteLine(x);
+            //int y = 0;
+            //int x = ++y;
+            //Console.WriteLine(y);
+            ////int z = ++y;
+            //Console.WriteLine(x);
            
             
 

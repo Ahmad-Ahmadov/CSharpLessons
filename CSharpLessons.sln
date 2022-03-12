@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiersInheritance", "AccessModifiersInheritance\AccessModifiersInheritance.csproj", "{714E4F99-F3AF-46AC-811E-AF31099E0651}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{423B42D7-F665-4C8E-A570-C04EA6569283}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714E4F99-F3AF-46AC-811E-AF31099E0651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423B42D7-F665-4C8E-A570-C04EA6569283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423B42D7-F665-4C8E-A570-C04EA6569283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423B42D7-F665-4C8E-A570-C04EA6569283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423B42D7-F665-4C8E-A570-C04EA6569283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,22 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Interface
 {
     // SOLID
 
-    interface IWorker
+    public interface IWorker
     {
         decimal Salary { get; set; }
     }
-    interface IPersonManager
+    /* public interface IPersonManager
+     {
+         int GetAge();
+         string GetFullName();
+         bool IsWorks();
+     }*/
+    public interface IPersonManager
     {
         int GetAge(IPerson m);
         string GetFullName(IPerson m);
         bool IsWorks(IPerson m);
     }
-    interface IPerson : IWorker
+    public interface IPerson : IWorker
     {
         string Name { get; set; }
         string Surname { get; set; }
@@ -27,7 +31,7 @@ namespace Interface
 
     }
 
-    class Person : IPerson
+    public class Person : IPerson
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -46,7 +50,7 @@ namespace Interface
         public decimal Salary { get; set; }
     }
 
-    class Person2 : IPerson
+    public class Person2 : IPerson
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -66,7 +70,7 @@ namespace Interface
         public decimal Salary { get; set; }
     }
 
-    class Person3 : IPerson
+    public class Person3 : IPerson
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -103,10 +107,59 @@ namespace Interface
         }
     }
 
+    /*public class PersonManager : IPersonManager
+    {
+        private readonly IPerson _person;
+        public PersonManager(IPerson m)
+        {
+            _person = m;
+        } 
+        public int GetAge()
+        {
+            return _person.Age;
+        }
+
+        public string GetFullName()
+        {
+            return _person.Name + " " + _person.Surname;
+        }
+
+        public bool IsWorks()
+        {
+            return _person.IsWorks;
+        }
+    }*/
+
     class Program
     {
         static void Main(string[] args)
         {
+            #region Code
+
+            
+            
+            /*Person person = new Person();
+            person.Name = "Ehmed";
+            person.Age = 20;
+            person.Surname = "Ehmedov";
+            person.IsWorks = true;
+
+            Person2 p = new Person2();
+            p.Name = "Medine";
+            p.Surname = "Elizade";
+            p.Age = 17;
+            p.IsWorks = false;
+            
+
+            PersonManager manager = new PersonManager(p);
+            
+
+            Console.WriteLine();
+            Console.WriteLine(manager.IsWorks());
+            Console.WriteLine(manager.GetAge());
+            Console.WriteLine(manager.GetFullName());*/
+        #endregion
+
             Person person = new Person();
             person.Name = "Ehmed";
             person.Age = 20;
@@ -148,7 +201,6 @@ namespace Interface
             Console.WriteLine(manager.IsWorks(p));
             Console.WriteLine(manager.GetAge(p));
             Console.WriteLine(manager.GetFullName(p));
-
 
             /*
              * S O L I D

@@ -84,8 +84,8 @@ namespace ArrayLoop
             ////int z = ++y;
             //Console.WriteLine(x);
 
-            int n = int.Parse(Console.ReadLine());
-            int[,] m = new int[n, n];
+           // int n = int.Parse(Console.ReadLine());
+           // int[,] m = new int[n, n];
 
             /*for (int i = 0; i < n; i++)
             {
@@ -101,7 +101,7 @@ namespace ArrayLoop
                 }
             }*/
 
-            for (int i = 0; i < n; i++)
+            /*for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
@@ -117,9 +117,19 @@ namespace ArrayLoop
                     Console.Write($"{m[i, j]} ");// string interpolation
                 }
                 Console.WriteLine();
-            }
+            }*/
+            double dist = double.Parse(Console.ReadLine());
+            double day = 10, total = 10;
+            int count = 0;
 
+            do
+            {
+                total += day;
+                day = day + day / 10.0;
+                count++;
+            } while (total <= dist);
 
+            Console.WriteLine(count);
         }
     }
 }

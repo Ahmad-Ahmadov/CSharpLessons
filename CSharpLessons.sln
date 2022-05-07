@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThisBaseKeywords", "ThisBas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListArrayListDictionary", "ListArrayListDictionary\ListArrayListDictionary.csproj", "{74BA2DC9-6839-4FA3-AFAC-D9293EEC8F86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "Exception\Exception.csproj", "{E5895A9A-301C-41CC-9FDD-FC4A1FE07AAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{74BA2DC9-6839-4FA3-AFAC-D9293EEC8F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BA2DC9-6839-4FA3-AFAC-D9293EEC8F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BA2DC9-6839-4FA3-AFAC-D9293EEC8F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5895A9A-301C-41CC-9FDD-FC4A1FE07AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5895A9A-301C-41CC-9FDD-FC4A1FE07AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5895A9A-301C-41CC-9FDD-FC4A1FE07AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5895A9A-301C-41CC-9FDD-FC4A1FE07AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

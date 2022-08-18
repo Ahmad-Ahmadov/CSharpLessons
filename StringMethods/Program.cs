@@ -20,7 +20,7 @@ namespace StringMethods
             //sting-in əvvəlinə boşluq əlavə edərək stringin uzunluğunu verilən uzunluğa bərabər edir
             string paddLeft = text.PadLeft(20);
             //sting-in sonuna boşluq əlavə edərək stringin uzunluğunu verilən uzunluğa bərabər edir
-            string paddRight = text.PadRight(20);
+            string paddRight = text.PadRight(20,'a');
             // string-in əvvəlində və sonunda olan boşluqları və ya ifadəni silir
             string trim = text.Trim('c');
             //string-in əvvəlində olan boşluqları və ya ifadəni silir
@@ -60,7 +60,7 @@ namespace StringMethods
             //    else if(word.Length > l.Length) l = word;
             //}
             //Console.WriteLine($"Short: {s}\nLong: {l}");
-
+            
         }
     }
 }

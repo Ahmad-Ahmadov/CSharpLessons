@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Linq
 {
-    class Student
+    internal class Student
     {
         public int Id { get; set; }
         public string Name { get; set; }
